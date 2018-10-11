@@ -5,8 +5,13 @@ describe('stringRepeat', () => {
     expect(stringRepeat('Hello', 4)).toEqual('HelloHelloHelloHello');
     expect(stringRepeat('a', 2)).toEqual('aa');
     expect(stringRepeat('qwerty', 7)).toEqual(
-      'qwertyqwertyqwertyqwertyqwertyqwertyqwerty',
+      'qwertyqwertyqwertyqwertyqwertyqwertyqwerty'
     );
+  });
+
+  test('should throws error when first argument has 0 length', () => {
+    expect(() => stringRepeat('', 4)).toThrow();
+    expect(() => stringRepeat('', 2)).toThrow();
   });
 
   test('should throws error when first argument is not a string', () => {
