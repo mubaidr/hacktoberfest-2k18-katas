@@ -5,7 +5,7 @@ describe('stringRepeat', () => {
     expect(stringRepeat('Hello', 4)).toEqual('HelloHelloHelloHello');
     expect(stringRepeat('a', 2)).toEqual('aa');
     expect(stringRepeat('qwerty', 7)).toEqual(
-      'qwertyqwertyqwertyqwertyqwertyqwertyqwerty'
+      'qwertyqwertyqwertyqwertyqwertyqwertyqwerty',
     );
   });
 
